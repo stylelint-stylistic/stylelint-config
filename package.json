@@ -1,0 +1,63 @@
+{
+	"name": "@stylistic/stylelint-config",
+	"description": "The stylistic shareable config for Stylelint.",
+	"version": "0.0.1",
+	"type": "module",
+	"exports": "./.stylelintrc.json",
+	"dependencies": {
+		"@stylistic/stylelint-plugin": "^2.0.0"
+	},
+	"peerDependencies": {
+		"stylelint": "^16.0.2"
+	},
+	"files": [
+		"./.stylelintrc.json"
+	],
+	"engines": {
+		"node": "^18.12 || >=20.9"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Sergey Artemov",
+		"email": "firefoxic.dev@gmail.com"
+	},
+	"homepage": "https://github.com/stylelint-stylistic/stylelint-config#readme",
+	"bugs": {
+		"url": "https://github.com/stylelint-stylistic/stylelint-config/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/stylelint-stylistic/stylelint-config.git"
+	},
+	"keywords": [
+		"codeguide",
+		"css",
+		"csslint",
+		"formatting",
+		"lint",
+		"linter",
+		"style",
+		"stylelint",
+		"stylelint-config",
+		"stylistic"
+	],
+	"scripts": {
+		"prepare": "husky install",
+		"lint:spaces": "ec",
+		"lint:scripts": "eslint .",
+		"lint": "pnpm /^lint:/",
+		"pretest": "pnpm lint",
+		"test": "node --test",
+		"test:coverage": "node --test --experimental-test-coverage",
+		"test:watch": "node --test --watch",
+		"preversion": "pnpm test",
+		"postversion": "pnpm publish --access=public",
+		"postpublish": "git push origin --all && git push origin --tags"
+	},
+	"devDependencies": {
+		"editorconfig-checker": "^5.1.2",
+		"eslint": "^8.56.0",
+		"husky": "^8.0.3",
+		"stylelint": "^16.0.2"
+	}
+}
