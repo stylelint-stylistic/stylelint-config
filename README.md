@@ -87,8 +87,8 @@ ESLint deprecates stylistic rules, too. But you can continue to use them thank
 [test-url]: https://github.com/stylelint-stylistic/stylelint-config/actions
 [test-image]: https://github.com/stylelint-stylistic/stylelint-config/actions/workflows/test.yml/badge.svg?branch=main
 
-[npm-url]: https://npmjs.org/package/@stylistic/stylelint-config
-[npm-image]: https://badge.fury.io/js/@stylistic/stylelint-config.svg
+[npm-url]: https://www.npmjs.com/package/@stylistic/stylelint-config
+[npm-image]: https://img.shields.io/npm/v/@stylistic/stylelint-config?logo=npm&logoColor=fff
 
 [license-url]: https://github.com/stylelint-stylistic/stylelint-config/blob/main/LICENSE
 [license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg
