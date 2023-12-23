@@ -1,7 +1,7 @@
 {
 	"name": "@stylistic/stylelint-config",
 	"description": "The stylistic shareable config for Stylelint.",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"type": "module",
 	"exports": "./.stylelintrc.json",
 	"dependencies": {
