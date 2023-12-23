@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Fixed
+
+- Removed setting of a rule that does not exist in the plugin.
+
 ## [1.0.0] — 2023–12–23
 
 ### Added

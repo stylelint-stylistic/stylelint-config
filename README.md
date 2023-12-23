@@ -7,7 +7,7 @@
 
 > The stylistic shareable config for Stylelint.
 
-Use it to return to your config the 64 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0), and the one [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
+Use it to return to your config the 63 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0), and the one [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
 
 To see the rules that this config uses, please read the [config itself](./.stylelintrc).
 
