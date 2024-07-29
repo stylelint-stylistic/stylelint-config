@@ -58,6 +58,7 @@
 		"editorconfig-checker": "^5.1.2",
 		"eslint": "^8.56.0",
 		"husky": "^8.0.3",
-		"stylelint": "^16.0.2"
-	}
+		"stylelint": "^16.7.0"
+	},
+	"packageManager": "pnpm@9.6.0"
 }

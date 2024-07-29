@@ -42,6 +42,7 @@ testRule({
 			rule,
 			severity: `error`,
 			text: `Expected newline after ":" with a multi-line declaration (${rule})`,
+			url: undefined,
 		},
 		{
 			line: 16,
@@ -51,6 +52,7 @@ testRule({
 			rule,
 			severity: `error`,
 			text: `Expected newline after ":" with a multi-line declaration (${rule})`,
+			url: undefined,
 		},
 	],
 })
