@@ -42,7 +42,7 @@
 		"stylistic"
 	],
 	"scripts": {
-		"prepare": "husky install",
+		"prepare": "husky",
 		"lint": "eslint .",
 		"pretest": "pnpm lint",
 		"test": "node --test",
@@ -54,7 +54,7 @@
 	},
 	"devDependencies": {
 		"eslint": "^8.56.0",
-		"husky": "^8.0.3",
+		"husky": "^9.1.4",
 		"stylelint": "^16.7.0"
 	},
 	"packageManager": "pnpm@9.6.0"
