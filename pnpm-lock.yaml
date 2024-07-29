@@ -12,9 +12,6 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(stylelint@16.7.0)
     devDependencies:
-      editorconfig-checker:
-        specifier: ^5.1.2
-        version: 5.1.2
       eslint:
         specifier: ^8.56.0
         version: 8.56.0
@@ -277,11 +274,6 @@ packages:
   doctrine@3.0.0:
     resolution: {integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==}
     engines: {node: '>=6.0.0'}
-
-  editorconfig-checker@5.1.2:
-    resolution: {integrity: sha512-HQfoRpRWJu3OS0+sn2qaX/U7TM0zjT+ANY2HH3wkBkd5INJDI5t6toY+JshYmhfXqX7luDndFwNV7f5e9Kmb7A==}
-    engines: {node: '>=18.0.0'}
-    hasBin: true
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1020,8 +1012,6 @@ snapshots:
   doctrine@3.0.0:
     dependencies:
       esutils: 2.0.3
-
-  editorconfig-checker@5.1.2: {}
 
   emoji-regex@8.0.0: {}
 
