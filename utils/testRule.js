@@ -1,6 +1,6 @@
-import { describe, it } from "node:test"
 import { deepEqual } from "node:assert/strict"
 import { readFile } from "node:fs/promises"
+import { describe, it } from "node:test"
 
 import stylelint from "stylelint"
 
@@ -25,6 +25,7 @@ export async function testRule ({ description, rule, plugin, code, expectedWarni
 		it(description, async () => {
 			const result = await stylelint.lint({ code, config })
 			const warnings = result.results[0].warnings
+
 			deepEqual(warnings, expectedWarnings)
 		})
 	})

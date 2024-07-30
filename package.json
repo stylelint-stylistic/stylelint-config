@@ -43,7 +43,7 @@
 	],
 	"scripts": {
 		"prepare": "husky",
-		"lint": "eslint .",
+		"lint": "eslint",
 		"pretest": "pnpm lint",
 		"test": "node --test",
 		"test:coverage": "node --test --experimental-test-coverage",
@@ -53,7 +53,10 @@
 		"postpublish": "git push origin --all && git push origin --tags"
 	},
 	"devDependencies": {
-		"eslint": "^8.56.0",
+		"@eslint/js": "^9.8.0",
+		"@stylistic/eslint-plugin-js": "^2.4.0",
+		"eslint": "^9.8.0",
+		"globals": "^15.8.0",
 		"husky": "^9.1.4",
 		"stylelint": "^16.7.0"
 	},
