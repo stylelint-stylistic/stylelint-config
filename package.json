@@ -3,15 +3,15 @@
 	"description": "The stylistic shareable config for Stylelint.",
 	"version": "1.0.1",
 	"type": "module",
-	"exports": "./.stylelintrc.json",
+	"exports": "./stylelint.config.js",
 	"dependencies": {
-		"@stylistic/stylelint-plugin": "^2.0.0"
+		"@stylistic/stylelint-plugin": "^3.0.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^16.0.2"
+		"stylelint": "^16.8.0"
 	},
 	"files": [
-		"./.stylelintrc.json"
+		"./stylelint.config.js"
 	],
 	"engines": {
 		"node": "^18.12 || >=20.9"
@@ -58,7 +58,7 @@
 		"eslint": "^9.8.0",
 		"globals": "^15.8.0",
 		"husky": "^9.1.4",
-		"stylelint": "^16.7.0"
+		"stylelint": "^16.8.0"
 	},
 	"packageManager": "pnpm@9.6.0"
 }
