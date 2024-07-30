@@ -2,20 +2,6 @@
 	"name": "@stylistic/stylelint-config",
 	"description": "The stylistic shareable config for Stylelint.",
 	"version": "1.0.1",
-	"type": "module",
-	"exports": "./stylelint.config.js",
-	"dependencies": {
-		"@stylistic/stylelint-plugin": "^3.0.0"
-	},
-	"peerDependencies": {
-		"stylelint": "^16.8.0"
-	},
-	"files": [
-		"./stylelint.config.js"
-	],
-	"engines": {
-		"node": "^18.12 || >=20.9"
-	},
 	"license": "MIT",
 	"author": {
 		"name": "Sergey Artemov",
@@ -29,18 +15,20 @@
 		"type": "git",
 		"url": "git+https://github.com/stylelint-stylistic/stylelint-config.git"
 	},
-	"keywords": [
-		"codeguide",
-		"css",
-		"csslint",
-		"formatting",
-		"lint",
-		"linter",
-		"style",
-		"stylelint",
-		"stylelint-config",
-		"stylistic"
+	"type": "module",
+	"exports": "./stylelint.config.js",
+	"files": [
+		"./stylelint.config.js"
 	],
+	"engines": {
+		"node": "^18.12 || >=20.9"
+	},
+	"peerDependencies": {
+		"stylelint": "^16.8.0"
+	},
+	"dependencies": {
+		"@stylistic/stylelint-plugin": "^3.0.0"
+	},
 	"scripts": {
 		"prepare": "husky",
 		"lint": "eslint",
@@ -52,6 +40,7 @@
 		"postversion": "pnpm publish --access=public",
 		"postpublish": "git push origin --all && git push origin --tags"
 	},
+	"packageManager": "pnpm@9.6.0",
 	"devDependencies": {
 		"@eslint/js": "^9.8.0",
 		"@stylistic/eslint-plugin-js": "^2.4.0",
@@ -60,5 +49,16 @@
 		"husky": "^9.1.4",
 		"stylelint": "^16.8.0"
 	},
-	"packageManager": "pnpm@9.6.0"
+	"keywords": [
+		"codeguide",
+		"css",
+		"csslint",
+		"formatting",
+		"lint",
+		"linter",
+		"style",
+		"stylelint",
+		"stylelint-config",
+		"stylistic"
+	]
 }
