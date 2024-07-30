@@ -37,12 +37,14 @@
 		"test:coverage": "node --test --experimental-test-coverage",
 		"test:watch": "node --test --watch",
 		"preversion": "pnpm test",
-		"postversion": "pnpm publish --access=public",
-		"postpublish": "git push origin --all && git push origin --tags"
+		"version": "update-changelog",
+		"postversion": "if [ \"$CI\" != \"true\" ]; then pnpm publish --access public; fi",
+		"postpublish": "git push --follow-tags"
 	},
 	"packageManager": "pnpm@9.6.0",
 	"devDependencies": {
 		"@eslint/js": "^9.8.0",
+		"@firefoxic/update-changelog": "^0.2.0",
 		"@stylistic/eslint-plugin-js": "^2.4.0",
 		"eslint": "^9.8.0",
 		"globals": "^15.8.0",
