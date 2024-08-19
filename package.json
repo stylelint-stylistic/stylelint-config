@@ -27,7 +27,7 @@
 		"stylelint": "^16.8.0"
 	},
 	"dependencies": {
-		"@stylistic/stylelint-plugin": "^3.0.0"
+		"@stylistic/stylelint-plugin": "^3.0.1"
 	},
 	"scripts": {
 		"prepare": "husky",
@@ -41,15 +41,13 @@
 		"postversion": "pnpm publish --provenance --access public --no-git-checks",
 		"postpublish": "git push --follow-tags"
 	},
-	"packageManager": "pnpm@9.6.0",
+	"packageManager": "pnpm@9.7.1",
 	"devDependencies": {
-		"@eslint/js": "^9.8.0",
+		"@firefoxic/eslint-config": "^3.0.0",
 		"@firefoxic/update-changelog": "^0.2.0",
-		"@stylistic/eslint-plugin-js": "^2.4.0",
-		"eslint": "^9.8.0",
-		"globals": "^15.8.0",
+		"eslint": "^9.9.0",
 		"husky": "^9.1.4",
-		"stylelint": "^16.8.0"
+		"stylelint": "^16.8.2"
 	},
 	"keywords": [
 		"codeguide",
