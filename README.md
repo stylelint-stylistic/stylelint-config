@@ -1,9 +1,9 @@
 # Stylelint Stylistic Config
 
-[![Test Status][test-image]][test-url]
 [![License: MIT][license-image]][license-url]
+[![Changelog][changelog-image]][changelog-url]
 [![NPM version][npm-image]][npm-url]
-[![Vulnerabilities count][vulnerabilities-image]][vulnerabilities-url]
+[![Test Status][test-image]][test-url]
 
 > The stylistic shareable config for Stylelint.
 
@@ -79,19 +79,14 @@ Please refer to [Stylelint docs](https://stylelint.io/user-guide/get-started) f
 
 ESLint deprecates stylistic rules, too. But you can continue to use them thanks to [ESLint Stylistic](https://eslint.style).
 
-## Important documents
-
-- [Changelog](https://github.com/stylelint-stylistic/stylelint-config/blob/main/CHANGELOG.md)
-- [License](./LICENSE)
-
-[test-url]: https://github.com/stylelint-stylistic/stylelint-config/actions
-[test-image]: https://github.com/stylelint-stylistic/stylelint-config/actions/workflows/test.yml/badge.svg?branch=main
-
-[npm-url]: https://www.npmjs.com/package/@stylistic/stylelint-config
-[npm-image]: https://img.shields.io/npm/v/@stylistic/stylelint-config?logo=npm&logoColor=fff
-
-[license-url]: https://github.com/stylelint-stylistic/stylelint-config/blob/main/LICENSE
+[license-url]: https://github.com/stylelint-stylistic/stylelint-config/blob/main/LICENSE.md
 [license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg
 
-[vulnerabilities-url]: https://snyk.io/test/github/stylelint-stylistic/stylelint-config
-[vulnerabilities-image]: https://snyk.io/test/github/stylelint-stylistic/stylelint-config/badge.svg
+[changelog-url]: https://github.com/stylelint-stylistic/stylelint-config/blob/main/CHANGELOG.md
+[changelog-image]: https://img.shields.io/badge/Change-log-limegreen
+
+[npm-url]: https://npmjs.org/package/@stylistic/stylelint-config
+[npm-image]: https://badge.fury.io/js/@stylistic%2Fstylelint-config.svg
+
+[test-url]: https://github.com/stylelint-stylistic/stylelint-config/actions
+[test-image]: https://github.com/stylelint-stylistic/stylelint-config/actions/workflows/test.yaml/badge.svg?branch=main
