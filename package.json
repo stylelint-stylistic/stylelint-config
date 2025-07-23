@@ -24,13 +24,13 @@
 		"node": "^18.12 || >=20.9"
 	},
 	"peerDependencies": {
-		"stylelint": "^16.8.0"
+		"stylelint": "16.22.0"
 	},
 	"dependencies": {
-		"@stylistic/stylelint-plugin": "^3.0.0"
+		"@stylistic/stylelint-plugin": "4.0.0"
 	},
 	"scripts": {
-		"prepare": "husky",
+		"prepare": "git config core.hooksPath .githooks",
 		"lint": "eslint",
 		"pretest": "pnpm lint",
 		"test": "node --test",
@@ -41,15 +41,11 @@
 		"postversion": "pnpm publish --provenance --access public --no-git-checks",
 		"postpublish": "git push --follow-tags"
 	},
-	"packageManager": "pnpm@9.6.0",
 	"devDependencies": {
-		"@eslint/js": "^9.8.0",
-		"@firefoxic/update-changelog": "^0.2.0",
-		"@stylistic/eslint-plugin-js": "^2.4.0",
-		"eslint": "^9.8.0",
-		"globals": "^15.8.0",
-		"husky": "^9.1.4",
-		"stylelint": "^16.8.0"
+		"@firefoxic/eslint-config": "5.0.0",
+		"@firefoxic/update-changelog": "1.0.0",
+		"eslint": "9.31.0",
+		"stylelint": "16.22.0"
 	},
 	"keywords": [
 		"codeguide",
