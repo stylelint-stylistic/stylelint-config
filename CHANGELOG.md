@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Fixed
+
+- The ability to install newer minor and patch versions of dependencies, which was accidentally removed, has been restored.
+
 ## [3.0.0] — 2025–07–23
 
 ### Changed
