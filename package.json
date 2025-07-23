@@ -1,7 +1,7 @@
 {
 	"name": "@stylistic/stylelint-config",
 	"description": "The stylistic shareable config for Stylelint.",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"license": "MIT",
 	"author": {
 		"name": "Sergey Artemov",
