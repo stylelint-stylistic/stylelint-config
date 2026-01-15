@@ -21,13 +21,13 @@
 		"./stylelint.config.js"
 	],
 	"engines": {
-		"node": "^18.12 || >=20.9"
+		"node": ">=20.19.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^16.22.0"
+		"stylelint": "^17.0.0"
 	},
 	"dependencies": {
-		"@stylistic/stylelint-plugin": "^4.0.0"
+		"@stylistic/stylelint-plugin": "^5.0.0"
 	},
 	"scripts": {
 		"prepare": "git config core.hooksPath .githooks",
@@ -39,8 +39,8 @@
 	},
 	"devDependencies": {
 		"@firefoxic/eslint-config": "^5.0.0",
-		"eslint": "^9.31.0",
-		"stylelint": "^16.22.0"
+		"eslint": "^9.39.2",
+		"stylelint": "^17.0.0"
 	},
 	"keywords": [
 		"codeguide",
