@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Fixed
+
+- The dependencies have now been updated to versions that include security fixes.
+
 ## [4.0.0] — 2026–01–15
 
 ### Changed

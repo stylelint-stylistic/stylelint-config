@@ -24,13 +24,13 @@
 		"node": ">=20.19.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^17.0.0"
+		"stylelint": "^17.6.0"
 	},
 	"dependencies": {
-		"@stylistic/stylelint-plugin": "^5.0.0"
+		"@stylistic/stylelint-plugin": "^5.1.0"
 	},
 	"scripts": {
-		"prepare": "git config core.hooksPath .githooks",
+		"prepare": "git config core.hooksPath .githooks || true",
 		"lint": "eslint",
 		"pretest": "pnpm lint",
 		"test": "node --test",
@@ -38,9 +38,9 @@
 		"test:watch": "node --test --watch"
 	},
 	"devDependencies": {
-		"@firefoxic/eslint-config": "^5.0.0",
-		"eslint": "^9.39.2",
-		"stylelint": "^17.0.0"
+		"@firefoxic/eslint-config": "^8.0.1",
+		"eslint": "^10.1.0",
+		"stylelint": "^17.6.0"
 	},
 	"keywords": [
 		"codeguide",
