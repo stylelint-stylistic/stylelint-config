@@ -4,4 +4,4 @@ git stash -ku
 
 trap "git stash pop" EXIT
 
-pnpm test
+make lint && make test

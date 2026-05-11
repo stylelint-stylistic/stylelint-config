@@ -23,6 +23,18 @@
 	"engines": {
 		"node": ">=22.22"
 	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=22.22",
+			"onFail": "download"
+		},
+		"packageManager": {
+			"name": "pnpm",
+			"version": ">=11.9",
+			"onFail": "download"
+		}
+	},
 	"peerDependencies": {
 		"stylelint": "^17.11.0"
 	},
@@ -30,12 +42,7 @@
 		"@stylistic/stylelint-plugin": "^5.1.0"
 	},
 	"scripts": {
-		"prepare": "git config core.hooksPath .githooks || true",
-		"lint": "oxlint",
-		"pretest": "pnpm lint",
-		"test": "node --test",
-		"test:coverage": "node --test --experimental-test-coverage",
-		"test:watch": "node --test --watch"
+		"help": "make help"
 	},
 	"devDependencies": {
 		"@firefoxic/oxlint-config": "^0.3.1",

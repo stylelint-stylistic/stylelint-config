@@ -9,20 +9,17 @@ on:
     - '*'
 
 env:
-  FORCE_COLOR: true
+  FORCE_COLOR: 2
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
+          cache: true
           version: latest
-      - uses: actions/setup-node@v6
-        with:
-          node-version-file: package.json
-          cache: pnpm
-      - run: pnpm install && pnpm add -D @reporters/github
-      - run: pnpm lint
-      - run: node --test --test-reporter=@reporters/github --test-reporter-destination=stdout --test-reporter=spec --test-reporter-destination=stdout
+      - run: make setup
+      - run: make lint
+      - run: make test
