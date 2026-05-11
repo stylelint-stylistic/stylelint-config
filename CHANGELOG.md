@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Changed
+
+- The config now requires `stylelint` version `17.11.0` or higher.
+
 ## [5.0.0] — 2026–03–28
 
 ### Changed

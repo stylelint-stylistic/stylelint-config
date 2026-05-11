@@ -22,7 +22,7 @@ export async function testRule ({ description, rule, plugin, code, expectedWarni
 				[rule]: await getRuleConfig(rule),
 			},
 		}
-		: undefined
+		: null
 
 	describe(rule, () => {
 		it(description, async () => {

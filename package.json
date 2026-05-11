@@ -24,23 +24,23 @@
 		"node": ">=20.19.0"
 	},
 	"peerDependencies": {
-		"stylelint": "^17.6.0"
+		"stylelint": "^17.11.0"
 	},
 	"dependencies": {
 		"@stylistic/stylelint-plugin": "^5.1.0"
 	},
 	"scripts": {
 		"prepare": "git config core.hooksPath .githooks || true",
-		"lint": "eslint",
+		"lint": "oxlint",
 		"pretest": "pnpm lint",
 		"test": "node --test",
 		"test:coverage": "node --test --experimental-test-coverage",
 		"test:watch": "node --test --watch"
 	},
 	"devDependencies": {
-		"@firefoxic/eslint-config": "^8.0.1",
-		"eslint": "^10.1.0",
-		"stylelint": "^17.6.0"
+		"@firefoxic/oxlint-config": "^0.3.1",
+		"oxlint": "^1.63.0",
+		"stylelint": "^17.11.0"
 	},
 	"keywords": [
 		"codeguide",
