@@ -21,7 +21,7 @@
 		"./stylelint.config.js"
 	],
 	"engines": {
-		"node": ">=20.19.0"
+		"node": ">=22.22"
 	},
 	"peerDependencies": {
 		"stylelint": "^17.11.0"

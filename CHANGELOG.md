@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Changed
 
+- The config now requires `node.js` version `22.22.0` or higher.
 - The config now requires `stylelint` version `17.11.0` or higher.
 
 ## [5.0.0] — 2026–03–28
