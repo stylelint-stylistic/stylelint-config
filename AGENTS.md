@@ -8,7 +8,7 @@ Guidance for AI coding agents working in this repository. `CLAUDE.md` only point
 
 ## Commands
 
-Tooling runs through `make`; the Makefile puts `node_modules/.bin` on `PATH` and is the source of truth for dev commands, so read it rather than relying on a list here (`make help` prints the targets). Package manager is pnpm (Node ≥ 22.22, pnpm ≥ 11.9, both auto-downloaded via `devEngines` on failure).
+Tooling runs through `make`; the Makefile puts `node_modules/.bin` on `PATH` and is the source of truth for dev commands, so read it rather than relying on a list here (`make help` prints the targets). Package manager is pnpm, runtime — node, both auto-downloaded via `devEngines` on failure.
 
 Run a single test file directly:
 
@@ -32,8 +32,7 @@ A test for a new rule follows the same shape: `rule`, `plugin: { name: "@stylist
 
 - ESM only (`"type": "module"`), `let` for variables and `const` only for true constants (top-level, `SCREAM_CASE`), no semicolons, tabs for indentation (see `.editorconfig`), template literals for plain strings (backticks even without interpolation). Linting comes from `@firefoxic/oxlint-config` (syntactic + stylistic presets); run `make fix` rather than hand-formatting.
 - Every user-facing change (a rule value in `stylelint.config.js`, a required `stylelint`, plugin, or Node version) gets an entry under `## [Unreleased]` in `CHANGELOG.md` (Keep a Changelog format), in the same commit that brings the change. Internal changes are not logged.
-- Commit messages are short imperative English sentences (`Add Makefile`, `Update dependencies`).
-- `pnpm-workspace.yaml` enables per-branch lockfiles (`gitBranchLockfile: true`) merged on `main` and `release*`; don't switch lockfile or package-manager settings casually.
+- Heading of a commit messages are imperative English sentences.
 
 ## Release flow
 
