@@ -4,7 +4,7 @@ Guidance for AI coding agents working in this repository. `CLAUDE.md` only point
 
 ## What this is
 
-`@stylistic/stylelint-config` is a single-file shareable Stylelint config. The whole published package is `stylelint.config.js`: it loads `@stylistic/stylelint-plugin` and sets 65 `@stylistic/*` rules, restoring the stylistic rules removed from `stylelint-config-standard` 30 and `stylelint-config-recommended` 10.0.1. There is no build step and no source directory.
+`@stylistic/stylelint-config` is a single-file shareable Stylelint config. The whole published package is `stylelint.config.js`: it loads `@stylistic/stylelint-plugin` and sets 66 `@stylistic/*` rules, restoring the stylistic rules removed from `stylelint-config-standard` 30 and `stylelint-config-recommended` 10.0.1. There is no build step and no source directory.
 
 ## Commands
 

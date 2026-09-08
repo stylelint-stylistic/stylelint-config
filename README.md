@@ -6,7 +6,7 @@
 
 > The stylistic shareable config for Stylelint.
 
-Use it to return to your config the 63 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0), and the one [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
+Use it to return to your config the 63 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0), the one [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1), and the `declaration-block-single-line-max-declarations` setting that [`stylelint-config-standard` drops with Stylelint 18](https://github.com/stylelint/stylelint-config-standard/pull/438).
 
 To see the rules that this config uses, please read the [config itself](./stylelint.config.js).
 
@@ -61,7 +61,7 @@ You can turn off rules by setting its value to `null`. For example:
 }
 ```
 
-In addition, the config is based on the [`@stylistic/stylelint-plugin`](https://www.npmjs.com/package/@stylistic/stylelint-plugin), which has all 76 stylistic rules [removed in Stylelint 16.0.0](https://github.com/stylelint/stylelint/releases/tag/16.0.0). You can use all these rules, not just the 65 configured in the config. For example:
+In addition, the config is based on the [`@stylistic/stylelint-plugin`](https://www.npmjs.com/package/@stylistic/stylelint-plugin), which has all 76 stylistic rules [removed in Stylelint 16.0.0](https://github.com/stylelint/stylelint/releases/tag/16.0.0). You can use all these rules, not just the 66 configured in the config. For example:
 
 ```json
 {

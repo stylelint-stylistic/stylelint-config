@@ -9,8 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Changed
 
-- The config now requires `node.js` version `22.22.0` or higher.
-- The config now requires `stylelint` version `17.11.0` or higher.
+- The `@stylistic/declaration-block-single-line-max-declarations` rule has been enabled with `1`. This setting comes from `stylelint-config-standard`, which sets `declaration-block-single-line-max-declarations` to `1` and drops it with Stylelint 18, since Stylelint 18 removes the rule; `@stylistic/stylelint-plugin` 6.0.0 takes the rule in under the `@stylistic/` prefix, so a project that extended the standard config for that setting finds it here.
 
 ## [5.0.0] — 2026–03–28
 
