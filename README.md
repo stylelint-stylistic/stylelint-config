@@ -4,79 +4,38 @@
 [![Changelog][changelog-image]][changelog-url]
 [![Test Status][test-image]][test-url]
 
-> The stylistic shareable config for Stylelint.
+The stylistic shareable config for Stylelint.
 
-Use it to return to your config the 63 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0), and the one [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
-
-To see the rules that this config uses, please read the [config itself](./stylelint.config.js).
+> [!IMPORTANT]
+>
+> This config reproduces the stylistic settings of the old `stylelint-config-standard`, for a migration that changes nothing. This config will not be developed, only maintained.
+>
+> The plugin's own opinion is its built-in recommended preset [`@stylistic/stylelint-plugin/recommended`](https://stylelint-stylistic.github.io/user-guide/configs). It already contains more settings and will continue to evolve with the plugin.
 
 ## Installation and usage
 
-Add `@stylistic/stylelint-config` and `stylelint` itself to your project:
+Add `@stylistic/stylelint-config` to your project (this assumes your project already has `stylelint` and `stylelint-config-standard`):
 
 ```shell
-npm add -D @stylistic/stylelint-config stylelint
+npm add -D @stylistic/stylelint-config
 ```
 
-Set your `.stylelintrc.json` to:
+Set your `stylelint.config.js` to:
 
-```json
-{
-	"extends": "@stylistic/stylelint-config"
-}
-```
-
-If you use `stylelint-config-recommended`, `stylelint-config-standard`, or some other config for syntax linting, then list the config names in an array (order matters):
-
-```json
-{
-	"extends": [
+```js
+export default {
+	extends: [
 		"stylelint-config-standard",
-		"@stylistic/stylelint-config"
-	]
+		"@stylistic/stylelint-config",
+	],
 }
 ```
 
-## Rule overrides
-
-If the value of a rule does not suit you, specify that rule in the `"rules"` section with the value you want:
-
-```json
-{
-	"extends": "@stylistic/stylelint-config",
-	"rules": {
-		"@stylistic/indentation": "tab"
-	}
-}
-```
-
-You can turn off rules by setting its value to `null`. For example:
-
-```json
-{
-	"extends": "@stylistic/stylelint-config",
-	"rules": {
-		"@stylistic/max-line-length": null
-	}
-}
-```
-
-In addition, the config is based on the [`@stylistic/stylelint-plugin`](https://www.npmjs.com/package/@stylistic/stylelint-plugin), which has all 76 stylistic rules [removed in Stylelint 16.0.0](https://github.com/stylelint/stylelint/releases/tag/16.0.0). You can use all these rules, not just the 65 configured in the config. For example:
-
-```json
-{
-	"extends": "@stylistic/stylelint-config",
-	"rules": {
-		"@stylistic/at-rule-name-newline-after": "always-multi-line"
-	}
-}
-```
-
-Please refer to [Stylelint docs](https://stylelint.io/user-guide/get-started) for detailed info on using this linter.
+[`@stylistic/stylelint-plugin`](https://stylelint-stylistic.github.io), on which this config is based, contains many more stylistic rules. Using this config you can add and override rules from the plugin. But if you need to override more than one or two rules, it might make sense to try replacing this config with [recommended preset](https://stylelint-stylistic.github.io/user-guide/configs).
 
 ## Need more?
 
-ESLint deprecates stylistic rules, too. But you can continue to use them thanks to [ESLint Stylistic](https://eslint.style).
+ESLint removed stylistic rules, too. But you can continue to use them by [ESLint Stylistic](https://eslint.style).
 
 [license-url]: https://github.com/stylelint-stylistic/stylelint-config/blob/main/LICENSE.md
 [license-image]: https://img.shields.io/badge/License-MIT-limegreen.svg

@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+### Changed
+
+- The `no-multiple-whitespaces` rule has now been removed from the config. To restore its operation, enable it in your config.
+
 ## [5.0.0] — 2026–03–28
 
 ### Changed
