@@ -3,29 +3,26 @@ name: Release
 on:
   push:
     branches:
-      - release*
+      - release
+      - release-*
 
 permissions:
   contents: write
   id-token: write
 
+env:
+  FORCE_COLOR: 2
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v4
-        with:
-          version: latest
-      - uses: actions/setup-node@v6
-        with:
-          node-version-file: package.json
-          cache: pnpm
-          registry-url: 'https://registry.npmjs.org'
-      - run: pnpm add -g npm@latest
-      - run: pnpm install
+      - uses: pnpm/action-setup@v6
+      - run: pnpm ci
+      - run: pnpm lint
       - run: pnpm dlx @firefoxic/release-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

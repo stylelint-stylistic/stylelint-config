@@ -1,11 +1,9 @@
-engineStrict: true
+gitChecks: false
 
-gitBranchLockfile: true
+minimumReleaseAgeExclude:
+  - "@firefoxic/*"
+  - "@stylistic/*"
+  - "stylelint"
 
-mergeGitBranchLockfilesBranchPattern:
-  - main
-  - release*
-
-shellEmulator: true
-
-verifyDepsBeforeRun: install
+registries:
+  default: https://registry.npmjs.org/

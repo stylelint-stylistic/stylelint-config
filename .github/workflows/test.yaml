@@ -6,22 +6,18 @@ on:
     - main
   pull_request:
     branches:
-    - '*'
+    - '**'
 
 env:
-  FORCE_COLOR: true
+  FORCE_COLOR: 2
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
         with:
-          version: latest
-      - uses: actions/setup-node@v6
-        with:
-          node-version-file: package.json
-          cache: pnpm
+          cache: true
       - run: pnpm ci
       - run: pnpm lint

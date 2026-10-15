@@ -20,23 +20,32 @@
 	"files": [
 		"./stylelint.config.js"
 	],
-	"engines": {
-		"node": ">=20.19.0"
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=26.12",
+			"onFail": "download"
+		},
+		"packageManager": {
+			"name": "pnpm",
+			"version": ">=12.13",
+			"onFail": "download"
+		}
 	},
 	"peerDependencies": {
 		"stylelint": "^17.6.0"
 	},
 	"dependencies": {
-		"@stylistic/stylelint-plugin": "^5.1.0"
+		"@stylistic/stylelint-plugin": "^5.3.1"
 	},
 	"scripts": {
 		"prepare": "git config core.hooksPath .githooks || true",
-		"lint": "eslint"
+		"lint": "oxlint"
 	},
 	"devDependencies": {
-		"@firefoxic/eslint-config": "^8.0.1",
-		"eslint": "^10.1.0",
-		"stylelint": "^17.6.0"
+		"@firefoxic/oxlint-config": "~0.5",
+		"oxlint": "^1",
+		"stylelint": "^17"
 	},
 	"keywords": [
 		"codeguide",
