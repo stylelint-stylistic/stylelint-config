@@ -11,10 +11,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - The config now requires `stylelint` version `18.0.0` or higher.
 - The `no-multiple-whitespaces` rule has now been removed from the config. To restore its operation, enable it in your config.
+- The same settings are now set under the `@stylistic/scss/` and `@stylistic/less/` namespaces as well, over `**/*.scss` and `**/*.less`. A file is read by the copies of the family it belongs to, so an `.scss` or a `.less` file is read as itself as soon as you tell `stylelint` to parse it as itself — see [SCSS, Less and other syntaxes](README.md#scss-less-and-other-syntaxes). A rule is changed or turned off there under that name, and turning one off takes every name it is set under.
+- The config names no parser and depends on none, so nothing is installed for a project of plain CSS and nothing changes for a project that names no syntax: such a file is parsed as CSS and read by the `@stylistic/` names, as before.
+- The `at-charset-rule-no-invalid` rule is now enabled, so that a CSS file holding a `@charset` no longer gets a warning from the plugin asking for it.
+- The rules are now named by their short names and projected under every namespace by the `defineStylistic` function of the plugin, rather than written out under the `@stylistic/` names by hand. Nothing about the settings changes.
 
 ### Added
 
-- The `declaration-block-single-line-max-declarations` rule is now added with the value `1`. This setting is taken from `stylelint-config-standard`, which removes it because the rule from Stylelint 18.0.0 moved to `@stylistic/stylelint-plugin` 6.0.0 under the `@stylistic/` prefix. FYI: when moved to the plugin, the rule extended its effect to at-rules and received autofix.
+- The `declaration-block-single-line-max-declarations` rule is now added with the value `1`. This setting is taken from `stylelint-config-standard`, which removes it because the rule from `stylelint` 18.0.0 moved to `@stylistic/stylelint-plugin` 6.0.0 under the `@stylistic/` prefix. FYI: when moved to the plugin, the rule extended its effect to at-rules and received autofix.
+- The settings are now exported as `rules`, by short name, so that a syntax this config cannot know about — a styled template, a `<style lang="scss">` block in an HTML page — can be given the same ones through `defineStylisticOverride` without copying them.
 
 ## [5.0.0] — 2026–03–28
 
