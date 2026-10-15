@@ -3,7 +3,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
@@ -11,26 +11,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Changed
 
-- The new `no-multiple-whitespaces` rule has been enabled. It disallows multiple whitespaces between property values and function arguments.
+- The new `no-multiple-whitespaces` rule has been enabled. It disallows multiple whitespaces between property values and function arguments.
 
 ### Fixed
 
-- The dependencies have now been updated to versions that include security fixes.
+- The dependencies have now been updated to versions that include security fixes.
 
 ## [4.0.0] — 2026–01–15
 
 ### Changed
 
 - The plugin now requires:
-	- `@stylistic/stylelint-plugin` version `5.0.0` or higher
+	- `@stylistic/stylelint-plugin` version `5.0.0` or higher
 	- `stylelint` version `17.0.0` or higher
-	- `node.js` version `20.19.0` or higher
+	- `node.js` version `20.19.0` or higher
 
 ## [3.0.1] — 2025–07–23
 
 ### Fixed
 
-- The ability to install newer minor and patch versions of dependencies, which was accidentally removed, has been restored.
+- The ability to install newer minor and patch versions of dependencies, which was accidentally removed, has been restored.
 
 ## [3.0.0] — 2025–07–23
 
@@ -38,7 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - The config now requires `stylelint` version `16.22.0` or higher.
 
-## [2.0.0] — 2024–07–30
+## [2.0.0] — 2024–07–30
 
 ### Changed
 
@@ -48,15 +48,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Fixed
 
-- Removed setting of a rule that does not exist in the plugin.
+- Removed setting of a rule that does not exist in the plugin.
 
 ## [1.0.0] — 2023–12–23
 
 ### Added
 
 - Config file for Stylelint with:
-	- 64 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0);
-	- 1 stylistic rule [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
+	- 64 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0);
+	- 1 stylistic rule [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
 
 [Unreleased]: https://github.com/stylelint-stylistic/stylelint-config/compare/v5.0.0...HEAD
 [5.0.0]: https://github.com/stylelint-stylistic/stylelint-config/compare/v4.0.0...v5.0.0
