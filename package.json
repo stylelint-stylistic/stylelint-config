@@ -31,11 +31,7 @@
 	},
 	"scripts": {
 		"prepare": "git config core.hooksPath .githooks || true",
-		"lint": "eslint",
-		"pretest": "pnpm lint",
-		"test": "node --test",
-		"test:coverage": "node --test --experimental-test-coverage",
-		"test:watch": "node --test --watch"
+		"lint": "eslint"
 	},
 	"devDependencies": {
 		"@firefoxic/eslint-config": "^8.0.1",
