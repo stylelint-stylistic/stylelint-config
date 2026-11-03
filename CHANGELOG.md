@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [6.0.0] — 2026–11–03
+
 ### Changed
 
 - The config now requires `stylelint` version `18.0.0` or higher.
@@ -72,7 +74,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 	- 64 stylistic rules [removed in `stylelint-config-standard` 30.0.0](https://github.com/stylelint/stylelint-config-standard/releases/tag/30.0.0);
 	- 1 stylistic rule [removed in `stylelint-config-recommended` 10.0.1](https://github.com/stylelint/stylelint-config-recommended/releases/tag/10.0.1).
 
-[Unreleased]: https://github.com/stylelint-stylistic/stylelint-config/compare/v5.0.0...HEAD
+[Unreleased]: https://github.com/stylelint-stylistic/stylelint-config/compare/v6.0.0...HEAD
+[6.0.0]: https://github.com/stylelint-stylistic/stylelint-config/compare/v5.0.0...v6.0.0
 [5.0.0]: https://github.com/stylelint-stylistic/stylelint-config/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/stylelint-stylistic/stylelint-config/compare/v3.0.1...v4.0.0
 [3.0.1]: https://github.com/stylelint-stylistic/stylelint-config/compare/v3.0.0...v3.0.1
