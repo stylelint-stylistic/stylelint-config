@@ -18,6 +18,7 @@ export default {
 		"@stylistic/declaration-block-semicolon-newline-after": `always-multi-line`,
 		"@stylistic/declaration-block-semicolon-space-after": `always-single-line`,
 		"@stylistic/declaration-block-semicolon-space-before": `never`,
+		"@stylistic/declaration-block-single-line-max-declarations": 1,
 		"@stylistic/declaration-block-trailing-semicolon": `always`,
 		"@stylistic/declaration-colon-newline-after": `always-multi-line`,
 		"@stylistic/declaration-colon-space-after": `always-single-line`,

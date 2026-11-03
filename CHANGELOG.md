@@ -9,7 +9,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Changed
 
+- The config now requires `stylelint` version `18.0.0` or higher.
 - The `no-multiple-whitespaces` rule has now been removed from the config. To restore its operation, enable it in your config.
+
+### Added
+
+- The `declaration-block-single-line-max-declarations` rule is now added with the value `1`. This setting is taken from `stylelint-config-standard`, which removes it because the rule from Stylelint 18.0.0 moved to `@stylistic/stylelint-plugin` 6.0.0 under the `@stylistic/` prefix. FYI: when moved to the plugin, the rule extended its effect to at-rules and received autofix.
 
 ## [5.0.0] — 2026–03–28
 
