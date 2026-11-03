@@ -3,6 +3,7 @@
 [![License: MIT][license-image]][license-url]
 [![Changelog][changelog-image]][changelog-url]
 [![Test Status][test-image]][test-url]
+[![Support the project][support-image]][support-url]
 
 The stylistic shareable config for Stylelint.
 
@@ -45,3 +46,6 @@ ESLint removed stylistic rules, too. But you can continue to use them by [ESL
 
 [test-url]: https://github.com/stylelint-stylistic/stylelint-config/actions
 [test-image]: https://github.com/stylelint-stylistic/stylelint-config/actions/workflows/test.yaml/badge.svg?branch=main
+
+[support-url]: https://pay.payora.money/l/stylelint-stylistic
+[support-image]: https://img.shields.io/badge/Support%20the%20project-❤️-pink
