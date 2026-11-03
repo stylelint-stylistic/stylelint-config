@@ -24,12 +24,12 @@
 	"devEngines": {
 		"runtime": {
 			"name": "node",
-			"version": ">=26.12",
+			"version": "^26.13",
 			"onFail": "download"
 		},
 		"packageManager": {
 			"name": "pnpm",
-			"version": ">=12.13",
+			"version": "^12.17",
 			"onFail": "download"
 		}
 	},
