@@ -1,7 +1,63 @@
 #!/bin/sh
 
-git stash -ku
+set -e
 
-trap "git stash pop" EXIT
+root=$(git rev-parse --show-toplevel)
 
-pnpm lint
+export PATH="$root/node_modules/.bin:$PATH"
+
+# A rebase, a merge, a cherry-pick or a revert owns the index while it runs, and an unmerged entry is nothing to write out. What such a commit carries has been checked once already, on its way in, and the branch is checked again when the work lands.
+for marker in rebase-merge rebase-apply MERGE_HEAD CHERRY_PICK_HEAD REVERT_HEAD; do
+	if [ -e "$(git rev-parse --git-dir)/$marker" ]
+	then exit 0
+	fi
+done
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then against=HEAD
+else against=$(git hash-object -t tree /dev/null)
+fi
+
+git diff-index --check --cached "$against" --
+
+# With an empty index there is nothing to check. A `git commit --amend` that only rewords a message arrives exactly like this.
+if git diff-index --cached --quiet "$against" --
+then exit 0
+fi
+
+# Git looks for renames of its own accord, so a renamed file arrives under `R` and would otherwise be neither linted nor tested. `core.quotePath` would spell a name outside ASCII escaped and in quotes, which is no path any more.
+changed_files=$(git -c core.quotePath=false diff --cached --name-only --diff-filter=ACMR | grep -E '\.js$') || true
+
+# Nothing to check.
+if [ -z "$changed_files" ]
+then exit 0
+fi
+
+# Unstaged changes are put aside so the checks read the commit rather than the working tree. They are brought back whether the checks pass or fail.
+stashed=0
+
+if [ -n "$(git diff --name-only)" ] || [ -n "$(git ls-files --others --exclude-standard)" ]
+then
+    git stash push --keep-index -u -m "pre-commit check" >/dev/null 2>&1
+    stashed=1
+fi
+
+restore_stash() {
+    if [ "$stashed" = 1 ]
+    then
+        if ! git stash pop >/dev/null 2>&1
+        then
+            printf '\n\t❌ Could not restore stashed changes. Run `git stash pop` manually.\n\n'
+            return 1
+        fi
+    fi
+    return 0
+}
+
+trap 'restore_stash || true' EXIT
+
+set -f
+IFS='
+'
+
+oxlint $changed_files
