@@ -36,16 +36,28 @@ export default {
 
 ## Custom syntaxes
 
-When using custom syntax, such as SCSS, to override some config rules, specify them with the appropriate namespace:
+For custom syntax, such as SCSS, install its parser and use `defineStylisticOverride` to apply stylistic rules to SCSS files.
+
+```shell
+npm add -D postcss-scss
+```
 
 ```js
+import { defineStylisticOverride } from "@stylistic/stylelint-config"
+
 export default {
 	extends: ["@stylistic/stylelint-config"],
-	rules: {
-		"@stylistic/scss/indentation": "tab",
-	},
+	overrides: [
+		defineStylisticOverride({
+			syntax: "scss",
+			files: "**/*.scss",
+			rules: { indentation: "tab" },
+		}),
+	],
 }
 ```
+
+The helper sets the SCSS parser and maps short rule names to the `@stylistic/scss/` namespace. In this example, SCSS uses tabs while the config's default indentation stays in effect for other files.
 
 ## Need more?
 

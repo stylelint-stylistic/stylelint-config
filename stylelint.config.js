@@ -1,4 +1,4 @@
-import { defineStylistic } from "@stylistic/stylelint-plugin"
+import { defineStylistic, defineStylisticOverride } from "@stylistic/stylelint-plugin"
 
 /**
  * The settings by short name, written once and named under each namespace below, so that every
@@ -87,4 +87,4 @@ export default {
 	],
 }
 
-export { rules }
+export { defineStylistic, defineStylisticOverride, rules }
